@@ -13,7 +13,8 @@ inputs:
     required: true
   token:
     description: 'Github token'
-    required: true
+    default: ${{ github.token }}
+    required: false
   port:
     description: 'Port to expose'
     default: '80'

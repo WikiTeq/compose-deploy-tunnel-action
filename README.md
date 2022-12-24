@@ -18,7 +18,7 @@ self-hosted instance of [Bore](https://github.com/ekzhang/bore) into the VPS.
 
 # Inputs
 
-* `token` - GitHub token
+* `token` - GitHub token, defaults to `${{ github.token }}`
 * `secret` - Bore secret that you've used when running `bore server`
 * `endpoint` - Bore server IP or domain
 * `port` - Port to tunnel into, default is `80`
