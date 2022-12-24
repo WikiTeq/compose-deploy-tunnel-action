@@ -26,10 +26,6 @@ inputs:
 runs:
   using: 'composite'
   steps:
-    - name: Check for secrets
-      if: ${{ inputs.secret }} == null
-      shell: bash
-      run: echo 'secret is missing' && exit 1
 
     - name: Check if user has write access
       uses: lannonbr/repo-permission-check-action@2.0.2
