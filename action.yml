@@ -78,6 +78,7 @@ runs:
       shell: bash
 
     - name: Setup env
+      shell: bash
       run: cp .env.ci .env
 
     - name: Update server variable
