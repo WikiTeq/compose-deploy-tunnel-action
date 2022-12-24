@@ -27,7 +27,7 @@ runs:
   using: 'composite'
   steps:
     - name: Check for secrets
-      if: ${{ inputs.secret }} == '' || ${{ inputs.secret }} == null
+      if: ${{ inputs.secret }} == null
       shell: bash
       run: echo 'secret is missing' && exit 1
 
