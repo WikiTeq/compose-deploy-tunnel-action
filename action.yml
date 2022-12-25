@@ -85,6 +85,8 @@ runs:
 
     - name: Setup Docker Compose
       uses: yu-ichiro/spin-up-docker-compose-action@main
+      env:
+        COMPOSER_TOKEN: ${{ inputs.token }}
       with:
         file: ${{ inputs.file }}
         cache-key: simple-docker-compose
